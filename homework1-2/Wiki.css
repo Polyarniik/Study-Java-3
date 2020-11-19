@@ -1,0 +1,154 @@
+body {
+    background-color: #F6F6F6;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.name {
+    display: none;
+}
+.logo {
+    position: absolute;
+    left: 0;
+    height: 160px;
+    width: 160px;
+}
+
+.head {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.head p {
+    position: center;
+}
+
+.head a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.head a:hover {
+    text-decoration: underline;
+}
+
+.information-navigation {
+    display: flex;
+}
+
+.record-add-container {
+    margin-top: 10em;
+    padding: 15px;
+    height: 100%;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    margin-left: 5px;
+    background-color: #FFFFFF;
+}
+
+
+.navigation {
+    margin-top: 10em;
+    padding: 10px;
+    min-width: 150px;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.record-add-container span {
+    font-style: italic;
+}
+
+.navigation span {
+    text-decoration: underline;
+    color: gray;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .navigation {
+        display: none;
+    }
+
+    .head {
+        background-color: #EAECF0 ;
+    }
+
+    .name {
+        display: flex;
+        flex-direction: row;
+        font-size: 2em;
+        background-color: #EAECF0;
+        padding: 5px;
+        margin: 0;
+        align-items: center;
+    }
+
+    .head a {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+    .burger-menu {
+        position: relative;
+        height: 40px;
+        margin-right: 50px;
+    }
+    .burger-menu span {
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        display: block;
+        position: absolute;
+        top: 50%;
+    }
+
+    .burger-menu span:after, .burger-menu span:before {
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        display: block;
+        content: '';
+        position: absolute;
+    }
+
+    .burger-menu span:after {
+        top: -7px
+    }
+
+    .burger-menu span:before {
+        top: 7px
+    }
+
+    .record-add-container {
+        margin-top: 0;
+        padding: 15px;
+        height: 100%;
+        border: none;
+        margin-left: 5px;
+        background-color: #FFFFFF;
+    }
+
+
+}

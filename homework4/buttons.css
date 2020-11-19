@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    margin: 70px;
+    background-color: #595959;
+    transition: background-color .3s;
+}
+
+button {
+    margin: 8px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    color: black;
+    transition: transform .3s ease-in;
+    outline: none;
+}
+
+.red-button {
+    background-color: #808F85;
+}
+
+.green-button {
+    background-color: #91C499;
+}
+
+.blue-button {
+    background-color: #F2E9DC;
+}
+.next-button {
+    background-color: #595959   ;
+    color: black;
+}
+
+.next-button:hover {
+    color: black;
+}
+
+
+button:hover {
+    border: 2px solid black;
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transform: scale(1.1);
+
+}
